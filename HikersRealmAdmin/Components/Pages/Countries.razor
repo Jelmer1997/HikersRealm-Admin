@@ -1,0 +1,109 @@
+﻿@page "/Countries"
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+<h3>Countries</h3>
+
+<EditForm Model="newCountry" OnValidSubmit="AddCountry">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-2">
+        <label>Name:</label>
+        <InputText @bind-Value="newCountry.Name" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Country</button>
+</EditForm>
+
+
+<hr />
+
+@if (countries == null)
+{
+    <p>Loading countries...</p>
+}
+else if (countries.Count == 0)
+{
+    <p>No countries found.</p>
+}
+else
+{
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var country in countries)
+            {
+                <tr>
+                    <td>@country.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="fixed-bottom-message alert alert-info text-center">
+        @message
+    </div>
+}
+@code {
+    public class Country
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+    }
+
+    private List<Country>? countries;
+    private Country newCountry = new();
+    private string message = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCountries();
+    }
+
+    private async Task LoadCountries()
+    {
+        countries = await Http.GetFromJsonAsync<List<Country>>("https://localhost:7193/Country");
+    }
+
+    private async Task AddCountry()
+    {
+        var response = await Http.PostAsJsonAsync("https://localhost:7193/Country", newCountry);
+        if (response.IsSuccessStatusCode)
+        {
+            await ShowMessageAsync("Country added successfully!");
+            newCountry = new Country();
+            await LoadCountries();
+        }
+        else
+        {
+            await ShowMessageAsync("Failed to add country.");
+        }
+    }
+
+    private CancellationTokenSource? messageCts;
+
+    private async Task ShowMessageAsync(string text, int milliseconds = 3000)
+    {
+        messageCts?.Cancel();
+        messageCts = new CancellationTokenSource();
+        message = text;
+        StateHasChanged();
+        try
+        {
+            await Task.Delay(milliseconds, messageCts.Token);
+            message = "";
+            StateHasChanged();
+        }
+        catch (TaskCanceledException)
+        {
+            // Ignore if a new message was shown before timeout
+        }
+    }
+
+}

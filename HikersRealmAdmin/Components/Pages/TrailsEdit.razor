@@ -1,0 +1,508 @@
+﻿@page "/TrailsEdit"
+@page "/TrailsEdit/{Id:int}"
+@using System.Net.Http.Json
+@using HikersRealmAdmin.Components.Models
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+
+<h3>
+    <span class="me-2">Trail Name</span>
+    <InputText @bind-Value="trail.Name"
+               class="form-control form-control-lg d-inline w-auto align-middle"
+               placeholder="Enter trail name..." />
+</h3>
+
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <ul class="nav nav-pills" id="pills-tab" role="tablist" style="margin-bottom:0;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-trail-tab" data-bs-toggle="pill" data-bs-target="#pills-trail" type="button" role="tab" aria-controls="pills-trail" aria-selected="true">Trail</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-stages-tab" data-bs-toggle="pill" data-bs-target="#pills-stages" type="button" role="tab" aria-controls="pills-stages" aria-selected="false">Stages</button>
+        </li>
+    </ul>
+    <div>
+        <button class="btn btn-success me-2" @onclick="SaveTrail">Save</button>
+        <button class="btn btn-secondary" @onclick="GoBack">Cancel</button>
+    </div>
+</div>
+
+
+
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-trail" role="tabpanel" aria-labelledby="pills-trail-tab">
+        <!-- Trail tab content here -->
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <InputTextArea id="description" class="form-control" @bind-Value="trail.Description" rows="4" />
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label class="form-label">Difficulty</label>
+                <InputSelect @bind-Value="trail.Difficulty" class="form-control">
+                    <option>Very easy</option>
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                    <option>Very hard</option>
+                </InputSelect>
+            </div>
+            <div class="col">
+                <label class="form-label">Min Days</label>
+                <InputNumber @bind-Value="trail.MinDays" class="form-control" />
+            </div>
+            <div class="col">
+                <label class="form-label">Max Days</label>
+                <InputNumber @bind-Value="trail.MaxDays" class="form-control" />
+            </div>
+            <div class="col">
+                <label class="form-label">Length</label>
+                <InputNumber @bind-Value="trail.Length" class="form-control" />
+            </div>
+            <div class="col">
+                <label class="form-label">Status</label>
+                <InputSelect @bind-Value="trail.Status" class="form-control">
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </InputSelect>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <label>Countries:</label>
+            <button type="button" class="btn btn-primary btn-sm" @onclick="OpenCountryModal">
+                Select Countries
+            </button>
+            <div>
+                @if (trail.Countries != null && trail.Countries.Count > 0)
+                {
+                    <ul class="mb-0 ps-3">
+                        @foreach (var country in trail.Countries)
+                        {
+                            <li>@country.Name</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <span class="text-muted">No countries selected</span>
+                }
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="pills-stages" role="tabpanel" aria-labelledby="pills-stages-tab">
+        <div>
+            <h5>Stages</h5>
+            <button class="btn btn-primary btn-sm mb-2" @onclick="ShowNewStageRow" disabled="@(!IsEditMode || newStage != null)">Add Stage</button>
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th style="width:40%;">Description</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Distance</th>
+                        <th>Ascent</th>
+                        <th>Descent</th>
+                        <th>Time</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (newStage != null)
+                    {
+                        <tr>
+                            <td><InputNumber @bind-Value="newStage.StageNumber" class="form-control form-control-sm" /></td>
+                            <td style="width:40%;">
+                                <InputTextArea @bind-Value="newStage.Description" class="form-control form-control-sm" />
+                            </td>
+                            <td><InputText @bind-Value="newStage.Start" class="form-control form-control-sm" /></td>
+                            <td><InputText @bind-Value="newStage.End" class="form-control form-control-sm" /></td>
+                            <td><InputNumber @bind-Value="newStage.Distance" class="form-control form-control-sm" /></td>
+                            <td><InputNumber @bind-Value="newStage.Ascent" class="form-control form-control-sm" /></td>
+                            <td><InputNumber @bind-Value="newStage.Descent" class="form-control form-control-sm" /></td>
+                            <td><InputNumber @bind-Value="newStage.Time" class="form-control form-control-sm" /></td>
+                            <td>
+                                <InputSelect @bind-Value="newStage.Grade" class="form-control form-control-sm">
+                                    <option value="">Select grade</option>
+                                    <option>Very easy</option>
+                                    <option>Easy</option>
+                                    <option>Medium</option>
+                                    <option>Hard</option>
+                                    <option>Very hard</option>
+                                </InputSelect>
+                            </td>
+                            <td>
+                                <InputSelect @bind-Value="newStage.Status" class="form-control form-control-sm">
+                                    <option>Active</option>
+                                    <option>Inactive</option>
+                                </InputSelect>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-sm me-1" @onclick="SaveNewStage">Save</button>
+                                <button class="btn btn-secondary btn-sm" @onclick="CancelNewStage">Cancel</button>
+                            </td>
+                        </tr>
+                    }
+                    @if (stages.Count == 0 && newStage == null)
+                    {
+                        <tr>
+                            <td colspan="11" class="text-muted text-center">No stages found.</td>
+                        </tr>
+                    }
+                    @foreach (var stage in stages)
+                    {
+                        if (editingStage != null && editingStage.Id == stage.Id)
+                        {
+                            <tr>
+                                <td><InputNumber @bind-Value="editingStage.StageNumber" class="form-control form-control-sm" /></td>
+                                <td style="width:40%;">
+                                    <InputTextArea @bind-Value="editingStage.Description" class="form-control form-control-sm" />
+                                </td>
+                                <td><InputText @bind-Value="editingStage.Start" class="form-control form-control-sm" /></td>
+                                <td><InputText @bind-Value="editingStage.End" class="form-control form-control-sm" /></td>
+                                <td><InputNumber @bind-Value="editingStage.Distance" class="form-control form-control-sm" /></td>
+                                <td><InputNumber @bind-Value="editingStage.Ascent" class="form-control form-control-sm" /></td>
+                                <td><InputNumber @bind-Value="editingStage.Descent" class="form-control form-control-sm" /></td>
+                                <td><InputNumber @bind-Value="editingStage.Time" class="form-control form-control-sm" /></td>
+                                <td>
+                                    <InputSelect @bind-Value="editingStage.Grade" class="form-control form-control-sm">
+                                        <option value="">Select grade</option>
+                                        <option>Very easy</option>
+                                        <option>Easy</option>
+                                        <option>Medium</option>
+                                        <option>Hard</option>
+                                        <option>Very hard</option>
+                                    </InputSelect>
+                                </td>
+                                <td>
+                                    <InputSelect @bind-Value="editingStage.Status" class="form-control form-control-sm">
+                                        <option>Active</option>
+                                        <option>Inactive</option>
+                                    </InputSelect>
+                                </td>
+                                <td>
+                                    <button class="btn btn-success btn-sm me-1" @onclick="() => SaveEditStage(stage.Id)">Save</button>
+                                    <button class="btn btn-secondary btn-sm" @onclick="CancelEditStage">Cancel</button>
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>@stage.StageNumber</td>
+                                <td style="width:40%;">@stage.Description</td>
+                                <td>@stage.Start</td>
+                                <td>@stage.End</td>
+                                <td>@stage.Distance</td>
+                                <td>@stage.Ascent</td>
+                                <td>@stage.Descent</td>
+                                <td>@stage.Time</td>
+                                <td>@stage.Grade</td>
+                                <td>@stage.Status</td>
+                                <td>
+                                    <button class="btn btn-sm btn-secondary me-1" @onclick="() => StartEditStage(stage)">Edit</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@if (showCountryModal)
+{
+    <div class="modal-backdrop fade show"></div>
+    <div class="modal d-block" tabindex="-1" style="background:rgba(0,0,0,0.2)">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Countries</h5>
+                    <button type="button" class="btn-close" @onclick="CloseCountryModal"></button>
+                </div>
+                <div class="modal-body">
+                    @if (allCountries.Count == 0)
+                    {
+                        <div>Loading...</div>
+                    }
+                    else
+                    {
+                        @foreach (var country in allCountries)
+                        {
+                            <div>
+                                <input type="checkbox"
+                                       checked="@selectedCountryIds.Contains(country.Id)"
+                                       @onchange="(e) => ToggleCountry(country.Id, ((ChangeEventArgs)e).Value is bool b && b ? true : !selectedCountryIds.Contains(country.Id))" />
+                                <span>@country.Name</span>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" @onclick="ConfirmCountrySelection">OK</button>
+                    <button class="btn btn-secondary" @onclick="CloseCountryModal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="fixed-bottom-message alert alert-info text-center">
+        @message
+    </div>
+}
+
+
+@code {
+    [Parameter] public int? Id { get; set; }
+    private string message = "";
+    public int TrailId { get; set; }
+    private Trail trail = new();
+    private bool loading = true;
+    private List<Country> allCountries = new();
+    private HashSet<int> selectedCountryIds = new();
+    private bool showCountryModal = false;
+    private List<Stage> stages = new();
+    private bool IsEditMode => Id.HasValue;
+
+    // Inline add/edit state
+    private Stage? newStage = null;
+    private Stage? editingStage = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (IsEditMode)
+        {
+            trail = await Http.GetFromJsonAsync<Trail>($"https://localhost:7193/Trail/{Id}") ?? new Trail();
+            selectedCountryIds = trail.Countries != null
+                ? trail.Countries.Select(c => c.Id).ToHashSet()
+                : new HashSet<int>();
+
+            // Load stages for this trail
+
+            stages = trail.Stages ?? new List<Stage>();
+
+        }
+        else
+        {
+            trail = new Trail(); // Defaults set in class
+            selectedCountryIds.Clear();
+            stages = new List<Stage>();
+        }
+        loading = false;
+    }
+
+    private async Task SaveTrail()
+    {
+        trail.Countries = selectedCountryIds
+            .Select(id => new Country { Id = id })
+            .ToList();
+        var url = IsEditMode
+            ? $"https://localhost:7193/Trail/{trail.Id}"
+            : "https://localhost:7193/Trail";
+        var json = System.Text.Json.JsonSerializer.Serialize(trail);
+        var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json-patch+json");
+        HttpResponseMessage? response = null;
+        if (IsEditMode)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Put, url) { Content = content };
+            response = await Http.SendAsync(request);
+        }
+        else
+        {
+            response = await Http.PostAsync(url, content);
+            if (response.IsSuccessStatusCode)
+            {
+                // Get the created trail with its Id
+                var createdTrail = await response.Content.ReadFromJsonAsync<Trail>();
+                if (createdTrail != null)
+                {
+                    trail.Id = createdTrail.Id;
+                    // Navigate to edit page for the new trail
+                    Navigation.NavigateTo($"/TrailsEdit/{trail.Id}", forceLoad: true);
+                    return;
+                }
+            }
+        }
+        if (response != null && response.IsSuccessStatusCode)
+        {
+            message = IsEditMode ? "Trail updated successfully!" : "Trail added successfully!";
+        }
+        else
+        {
+            message = "Failed to save trail.";
+        }
+    }
+
+
+    private void GoBack() => Navigation.NavigateTo("");
+    private async void OpenCountryModal()
+    {
+        showCountryModal = true;
+        if (allCountries.Count == 0)
+            allCountries = await Http.GetFromJsonAsync<List<Country>>("https://localhost:7193/Country") ?? new();
+        StateHasChanged();
+    }
+    private void CloseCountryModal() => showCountryModal = false;
+    private void ToggleCountry(int id, bool isChecked)
+    {
+        if (isChecked)
+        {
+            selectedCountryIds.Add(id);
+            // Add to trail.Countries if not already present
+            if (trail.Countries.All(c => c.Id != id))
+            {
+                var country = allCountries.FirstOrDefault(c => c.Id == id);
+                if (country != null)
+                    trail.Countries.Add(country);
+            }
+        }
+        else
+        {
+            selectedCountryIds.Remove(id);
+            // Remove from trail.Countries
+            var toRemove = trail.Countries.FirstOrDefault(c => c.Id == id);
+            if (toRemove != null)
+                trail.Countries.Remove(toRemove);
+        }
+    }
+    private void ConfirmCountrySelection() => showCountryModal = false;
+
+    // Inline add/edit logic for stages
+    private void ShowNewStageRow()
+    {
+        newStage = new Stage
+            {
+                StageNumber = stages.Count + 1,
+                Status = "Active"
+            };
+        editingStage = null;
+    }
+
+    private async Task SaveNewStage()
+    {
+        if (newStage != null && IsEditMode)
+        {
+            newStage.TrailId = trail.Id; // Ensure TrailId is set
+
+            var response = await Http.PostAsJsonAsync("https://localhost:7193/Stage", newStage);
+            if (response.IsSuccessStatusCode)
+            {
+                var createdStages = await response.Content.ReadFromJsonAsync<List<Stage>>();
+                if (createdStages != null)
+                {
+                    foreach (var s in createdStages)
+                    {
+                        stages.Add(s);
+                    }
+                }
+                newStage = null;
+                await ShowMessageAsync("Stage added successfully!");
+            }
+            else
+            {
+                await ShowMessageAsync("Failed to add stage.");
+            }
+        }
+    }
+
+
+
+
+    private void CancelNewStage()
+    {
+        newStage = null;
+    }
+
+    private void StartEditStage(Stage stage)
+    {
+        editingStage = new Stage
+            {
+                Id = stage.Id,
+                Description = stage.Description,
+                StageNumber = stage.StageNumber,
+                Start = stage.Start,
+                End = stage.End,
+                Distance = stage.Distance,
+                Ascent = stage.Ascent,
+                Descent = stage.Descent,
+                Time = stage.Time,
+                Grade = stage.Grade,
+                Status = stage.Status
+            };
+        newStage = null;
+    }
+
+    private async Task SaveEditStage(int id)
+    {
+        if (editingStage != null && IsEditMode)
+        {
+            editingStage.TrailId = trail.Id; // Ensure TrailId is set
+
+            var response = await Http.PutAsJsonAsync($"https://localhost:7193/Stage/{id}", editingStage);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var index = stages.FindIndex(s => s.Id == editingStage.Id);
+                if (index != -1)
+                {
+                    stages[index] = new Stage
+                        {
+                            Id = editingStage.Id,
+                            Description = editingStage.Description,
+                            StageNumber = editingStage.StageNumber,
+                            Start = editingStage.Start,
+                            End = editingStage.End,
+                            Distance = editingStage.Distance,
+                            Ascent = editingStage.Ascent,
+                            Descent = editingStage.Descent,
+                            Time = editingStage.Time,
+                            Grade = editingStage.Grade,
+                            Status = editingStage.Status,
+                            TrailId = editingStage.TrailId
+                        };
+                }
+                editingStage = null;
+                await ShowMessageAsync("Stage updated successfully!");
+            }
+            else
+            {
+                await ShowMessageAsync("Failed to update stage.");
+            }
+        }
+    }
+
+    private void CancelEditStage()
+    {
+        editingStage = null;
+    }
+    private CancellationTokenSource? messageCts;
+
+    private async Task ShowMessageAsync(string text, int milliseconds = 3000)
+    {
+        messageCts?.Cancel();
+        messageCts = new CancellationTokenSource();
+        message = text;
+        StateHasChanged();
+        try
+        {
+            await Task.Delay(milliseconds, messageCts.Token);
+            message = "";
+            StateHasChanged();
+        }
+        catch (TaskCanceledException)
+        {
+            // Ignore if a new message was shown before timeout
+        }
+    }
+
+}
