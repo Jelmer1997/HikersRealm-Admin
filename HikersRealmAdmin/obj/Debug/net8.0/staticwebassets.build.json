@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yUzSs3TIifUcAjFVO2FPVUw19DDnH/tG51E1E7Dw7+A=",
+  "Hash": "5LNf1izWNTUOp0WvuGZlkc2cKaWTrX+hlRrFFT7jhJE=",
   "Source": "HikersRealmAdmin",
   "BasePath": "_content/HikersRealmAdmin",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "HikersRealmAdmin\\wwwroot",
       "Source": "HikersRealmAdmin",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\",
       "BasePath": "_content/HikersRealmAdmin",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css",
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css",
       "SourceId": "HikersRealmAdmin",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HikersRealmAdmin",
       "RelativePath": "HikersRealmAdmin#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "ZCquVMUKC+FtiZiFZNbP5A+NTX0doQUEwTRVrQ2lbVQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css"
+      "OriginalItemSpec": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css"
     },
     {
-      "Identity": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
       "SourceId": "HikersRealmAdmin",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HikersRealmAdmin",
       "RelativePath": "HikersRealmAdmin#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "ZCquVMUKC+FtiZiFZNbP5A+NTX0doQUEwTRVrQ2lbVQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\app.css",
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\app.css",
       "SourceId": "HikersRealmAdmin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\",
       "BasePath": "_content/HikersRealmAdmin",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -73,17 +73,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1ldh9cqk03",
-      "Integrity": "+6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo=",
+      "Fingerprint": "077akpmvu0",
+      "Integrity": "FAVLqJ0XyqSxlbicT5VSlcBwj5+++/mL1t5NozYnv3M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "HikersRealmAdmin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\",
       "BasePath": "_content/HikersRealmAdmin",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "HikersRealmAdmin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\",
       "BasePath": "_content/HikersRealmAdmin",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\favicon.png",
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\favicon.png",
       "SourceId": "HikersRealmAdmin",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\",
       "BasePath": "_content/HikersRealmAdmin",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -141,12 +141,33 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
+      "SourceId": "HikersRealmAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\",
+      "BasePath": "_content/HikersRealmAdmin",
+      "RelativePath": "Helpers#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "01c2twz574",
+      "Integrity": "ZNaq+0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Helpers.js"
     }
   ],
   "Endpoints": [
     {
-      "Route": "app.1ldh9cqk03.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\app.css",
+      "Route": "app.077akpmvu0.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -155,7 +176,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2880"
+          "Value": "3271"
         },
         {
           "Name": "Content-Type",
@@ -163,11 +184,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo=\""
+          "Value": "\"FAVLqJ0XyqSxlbicT5VSlcBwj5+++/mL1t5NozYnv3M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:18:36 GMT"
+          "Value": "Fri, 16 May 2025 13:23:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -177,7 +198,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1ldh9cqk03"
+          "Value": "077akpmvu0"
         },
         {
           "Name": "label",
@@ -185,13 +206,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo="
+          "Value": "sha256-FAVLqJ0XyqSxlbicT5VSlcBwj5+++/mL1t5NozYnv3M="
         }
       ]
     },
     {
       "Route": "app.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\app.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -200,7 +221,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2880"
+          "Value": "3271"
         },
         {
           "Name": "Content-Type",
@@ -208,11 +229,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo=\""
+          "Value": "\"FAVLqJ0XyqSxlbicT5VSlcBwj5+++/mL1t5NozYnv3M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 08:18:36 GMT"
+          "Value": "Fri, 16 May 2025 13:23:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -222,13 +243,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo="
+          "Value": "sha256-FAVLqJ0XyqSxlbicT5VSlcBwj5+++/mL1t5NozYnv3M="
         }
       ]
     },
     {
       "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -273,7 +294,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -310,7 +331,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -355,7 +376,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -392,7 +413,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\favicon.png",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -437,7 +458,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\favicon.png",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -473,8 +494,90 @@
       ]
     },
     {
+      "Route": "Helpers.01c2twz574.js",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNaq+0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:38:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "01c2twz574"
+        },
+        {
+          "Name": "label",
+          "Value": "Helpers.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNaq+0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208="
+        }
+      ]
+    },
+    {
+      "Route": "Helpers.js",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNaq+0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 07:38:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNaq+0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208="
+        }
+      ]
+    },
+    {
       "Route": "HikersRealmAdmin.bundle.scp.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -511,7 +614,7 @@
     },
     {
       "Route": "HikersRealmAdmin.gxfbl4440r.bundle.scp.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -556,7 +659,7 @@
     },
     {
       "Route": "HikersRealmAdmin.gxfbl4440r.styles.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -601,7 +704,7 @@
     },
     {
       "Route": "HikersRealmAdmin.styles.css",
-      "AssetFile": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css",
+      "AssetFile": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HikersRealmAdmin.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {

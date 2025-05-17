@@ -1,0 +1,64 @@
+﻿@inject HttpClient Http
+@using HikersRealmAdmin.Components.Models
+
+@if (Visible)
+{
+    <div class="modal-backdrop fade show"></div>
+    <div class="modal d-block" tabindex="-1" style="background:rgba(0,0,0,0.2)">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Trail</h5>
+                    <button type="button" class="btn-close" @onclick="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <InputText class="form-control" placeholder="Trail name..." @bind-Value="TrailName" />
+                    @if (!string.IsNullOrEmpty(ErrorMessage))
+                    {
+                        <div class="text-danger mt-2">@ErrorMessage</div>
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" @onclick="CreateTrailAsync" disabled="@string.IsNullOrWhiteSpace(TrailName)">Create</button>
+                    <button class="btn btn-secondary" @onclick="Close">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool Visible { get; set; }
+    [Parameter] public EventCallback<bool> VisibleChanged { get; set; }
+    [Parameter] public EventCallback<int> OnTrailCreated { get; set; }
+
+    private string TrailName { get; set; } = "";
+    private string ErrorMessage { get; set; } = "";
+
+    private async Task CreateTrailAsync()
+    {
+        ErrorMessage = "";
+        var newTrail = new Trail { Name = TrailName };
+        var response = await Http.PostAsJsonAsync("https://localhost:7193/Trail", newTrail);
+        if (response.IsSuccessStatusCode)
+        {
+            var createdTrail = await response.Content.ReadFromJsonAsync<Trail>();
+            if (createdTrail != null)
+            {
+                await OnTrailCreated.InvokeAsync(createdTrail.Id);
+                await Close();
+            }
+        }
+        else
+        {
+            ErrorMessage = "Failed to create trail.";
+        }
+    }
+
+    public async Task Close()
+    {
+        TrailName = "";
+        ErrorMessage = "";
+        await VisibleChanged.InvokeAsync(false);
+    }
+}

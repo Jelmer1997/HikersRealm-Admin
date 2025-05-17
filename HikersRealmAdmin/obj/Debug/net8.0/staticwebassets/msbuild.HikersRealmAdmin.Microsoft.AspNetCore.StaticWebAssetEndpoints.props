@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/app.1ldh9cqk03.css">
+    <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/app.077akpmvu0.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1ldh9cqk03"},{"Name":"integrity","Value":"sha256-\u002B6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo="},{"Name":"label","Value":"_content/HikersRealmAdmin/app.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2880"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002B6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 08:18:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"077akpmvu0"},{"Name":"integrity","Value":"sha256-FAVLqJ0XyqSxlbicT5VSlcBwj5\u002B\u002B\u002B/mL1t5NozYnv3M="},{"Name":"label","Value":"_content/HikersRealmAdmin/app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3271"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FAVLqJ0XyqSxlbicT5VSlcBwj5\u002B\u002B\u002B/mL1t5NozYnv3M=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 13:23:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002B6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2880"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002B6ccTbwplBHTDQdo/fkjjflj4vT353FZEGxk3xOKSJo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 08:18:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FAVLqJ0XyqSxlbicT5VSlcBwj5\u002B\u002B\u002B/mL1t5NozYnv3M="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3271"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FAVLqJ0XyqSxlbicT5VSlcBwj5\u002B\u002B\u002B/mL1t5NozYnv3M=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 13:23:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/bootstrap/bootstrap.min.bpk8xqwxhs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>
@@ -47,6 +47,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 13 May 2025 19:00:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/Helpers.01c2twz574.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Helpers.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"01c2twz574"},{"Name":"integrity","Value":"sha256-ZNaq\u002B0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208="},{"Name":"label","Value":"_content/HikersRealmAdmin/Helpers.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"699"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ZNaq\u002B0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 07:38:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/Helpers.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Helpers.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZNaq\u002B0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"699"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ZNaq\u002B0MT/IxWFLypRZP587W4BKVzHxJsZzWqD9g0208=\u0022"},{"Name":"Last-Modified","Value":"Fri, 16 May 2025 07:38:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/HikersRealmAdmin/HikersRealmAdmin.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\HikersRealmAdmin.gxfbl4440r.bundle.scp.css'))</AssetFile>

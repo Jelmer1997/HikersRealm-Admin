@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HikersRealmAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb65fd5cf1c944115c64e5caf0f13c9a55ba5f30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f4b231c5acfed432e068507a5e00005c62decc6")]
 [assembly: System.Reflection.AssemblyProductAttribute("HikersRealmAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HikersRealmAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

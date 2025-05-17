@@ -1,23 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
+      "Id": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HikersRealmAdmin.bundle.scp.css",
       "PackagePath": "staticwebassets\\HikersRealmAdmin.gxfbl4440r.bundle.scp.css"
     },
     {
-      "Id": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\app.css",
+      "Id": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
+      "PackagePath": "staticwebassets\\Helpers.js"
+    },
+    {
+      "Id": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\wwwroot\\favicon.png",
+      "Id": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

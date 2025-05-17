@@ -1,0 +1,56 @@
+﻿@page "/ArchivedTrails"
+@inject HttpClient Http
+
+<h3>Archived Trails</h3>
+
+@if (loading)
+{
+    <p>Loading archived trails...</p>
+}
+else if (archivedTrails.Count == 0)
+{
+    <p>No archived trails found.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Modified Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var trail in archivedTrails)
+            {
+                <tr>
+                    <td>@trail.Name</td>
+                    <td>@trail.ModifyDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ArchivedTrailDto> archivedTrails = new();
+    private bool loading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            archivedTrails = await Http.GetFromJsonAsync<List<ArchivedTrailDto>>("https://localhost:7193/Trail/archived") ?? new();
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    private class ArchivedTrailDto
+    {
+        public string Name { get; set; } = string.Empty;
+        public DateTime ModifyDate { get; set; }
+    }
+}

@@ -63,3 +63,24 @@ h1:focus {
     padding: 1rem;
     pointer-events: none; /* Optional: allows clicks to pass through */
 }
+
+/*TRAIL TABLE CSS*/
+.trails-table-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* Optional: add a border or background for clarity */
+}
+
+    .trails-table-container table {
+        width: 100%;
+        margin-bottom: 0;
+        /* REMOVE flex: 1 1 auto; */
+    }
+
+    .trails-table-container nav {
+        margin-top: auto;
+    }
+
+
+

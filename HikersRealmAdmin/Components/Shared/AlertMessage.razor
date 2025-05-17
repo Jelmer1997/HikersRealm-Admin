@@ -1,0 +1,32 @@
+﻿@namespace HikersRealmAdmin.Components.Shared
+
+
+@if (!string.IsNullOrEmpty(_message))
+{
+    <div class="fixed-bottom-message alert alert-info text-center">
+        @_message
+    </div>
+}
+
+@code {
+    private string _message = "";
+    private CancellationTokenSource? _cts;
+
+    public async Task ShowMessageAsync(string text, int milliseconds = 3000)
+    {
+        _cts?.Cancel();
+        _cts = new CancellationTokenSource();
+        _message = text;
+        StateHasChanged();
+        try
+        {
+            await Task.Delay(milliseconds, _cts.Token);
+            _message = "";
+            StateHasChanged();
+        }
+        catch (TaskCanceledException)
+        {
+            // Ignore if a new message was shown before timeout
+        }
+    }
+}

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\HikersRealmAdmin.csproj",
+      "projectUniqueName": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\HikersRealmAdmin.csproj",
       "projectName": "HikersRealmAdmin",
-      "projectPath": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\HikersRealmAdmin.csproj",
+      "projectPath": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\HikersRealmAdmin.csproj",
       "packagesPath": "C:\\Users\\jelmer\\.nuget\\packages\\",
-      "outputPath": "C:\\Data\\Repo\\HikersRealmAdmin\\HikersRealmAdmin\\obj\\",
+      "outputPath": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
