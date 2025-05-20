@@ -90,23 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AlertMessage.razor",
-              "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Shared\\AlertMessage.razor",
-              "RelativeDocumentMoniker": "Components\\Shared\\AlertMessage.razor",
-              "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Shared\\AlertMessage.razor",
-              "RelativeToolTip": "Components\\Shared\\AlertMessage.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T11:28:46.197Z"
             },
             {
               "$type": "Document",
@@ -204,6 +192,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T19:04:27.58Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlertMessage.razor",
+              "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Shared\\AlertMessage.razor",
+              "RelativeDocumentMoniker": "Components\\Shared\\AlertMessage.razor",
+              "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Shared\\AlertMessage.razor",
+              "RelativeToolTip": "Components\\Shared\\AlertMessage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T11:28:46.197Z"
             },
             {
               "$type": "Document",
