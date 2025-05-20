@@ -281,7 +281,12 @@
             Navigation.NavigateTo("/Trails");
             return;
         }
+
+        stages = trail.Stages ?? new List<Stage>();
+        selectedCountryIds = trail.Countries?.Select(c => c.Id).ToHashSet() ?? new HashSet<int>();
+        loading = false;
     }
+
 
     private async Task SaveTrail()
     {

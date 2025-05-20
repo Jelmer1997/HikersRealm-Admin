@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|c:\\data\\repo\\hikersrealm-admin\\hikersrealmadmin\\components\\pages\\trailsedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|solutionrelative:components\\pages\\trailsedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|c:\\data\\repo\\hikersrealm-admin\\hikersrealmadmin\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|c:\\data\\repo\\hikersrealm-admin\\hikersrealmadmin\\components\\pages\\trails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|solutionrelative:components\\pages\\trails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|c:\\data\\repo\\hikersrealm-admin\\hikersrealmadmin\\components\\pages\\trailsedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|solutionrelative:components\\pages\\trailsedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A75DE564-B92F-47DF-BF95-F8B170FDBE31}|HikersRealmAdmin.csproj|c:\\data\\repo\\hikersrealm-admin\\hikersrealmadmin\\components\\shared\\createtrailmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,35 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TrailsEdit.razor",
-              "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Pages\\TrailsEdit.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\TrailsEdit.razor",
-              "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Pages\\TrailsEdit.razor",
-              "RelativeToolTip": "Components\\Pages\\TrailsEdit.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T19:28:52.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Helpers.js",
-              "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
-              "RelativeDocumentMoniker": "wwwroot\\Helpers.js",
-              "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
-              "RelativeToolTip": "wwwroot\\Helpers.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-16T07:18:57.983Z"
             },
             {
               "$type": "Document",
@@ -134,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Trails.razor",
               "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Pages\\Trails.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Trails.razor",
@@ -170,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\app.css",
@@ -182,16 +158,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
               "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T19:04:27.58Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrailsEdit.razor",
+              "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Pages\\TrailsEdit.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\TrailsEdit.razor",
+              "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Pages\\TrailsEdit.razor",
+              "RelativeToolTip": "Components\\Pages\\TrailsEdit.razor",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAAA0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T19:28:52.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Helpers.js",
+              "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
+              "RelativeDocumentMoniker": "wwwroot\\Helpers.js",
+              "ToolTip": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\wwwroot\\Helpers.js",
+              "RelativeToolTip": "wwwroot\\Helpers.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-16T07:18:57.983Z"
             },
             {
               "$type": "Document",
@@ -207,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Data\\Repo\\HikersRealm-Admin\\HikersRealmAdmin\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
